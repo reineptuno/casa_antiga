@@ -1,0 +1,10 @@
+# Frames — gerados localmente via FFmpeg
+frames/
+
+# Vídeos de origem
+*.mp4
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

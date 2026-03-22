@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Antiga — Onde o tempo tem valor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">Casa Antiga</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#pecas">Peças</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="background_movie.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content reveal">
+      <h1 class="hero-title">Casa Antiga</h1>
+      <p class="hero-tagline">Onde o tempo tem valor.</p>
+      <div class="hero-actions">
+        <a href="#pecas" class="btn btn-primary">Ver Colecção</a>
+        <a href="#servicos" class="btn btn-ghost">Os Nossos Serviços</a>
+      </div>
+    </div>
+    <a href="#servicos" class="hero-scroll" aria-label="Scroll">
+      <span class="hero-scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section servicos" id="servicos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">O Que Fazemos</span>
+        <h2>Serviços</h2>
+        <p>Décadas de experiência ao serviço da preservação e valorização do património.</p>
+      </div>
+      <div class="servicos-grid">
+        <div class="servico-card reveal">
+          <div class="servico-icon">
+            <!-- Restauro: pincel de restauro -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="10" y1="8" x2="34" y2="32"/>
+              <rect x="31" y="29" width="5" height="6" rx="1" transform="rotate(45 33.5 32)"/>
+              <path d="M36 35 Q43 38 41 45 Q34 43 31 36"/>
+              <path d="M10 8 L14 4 L18 8 L14 12 Z"/>
+            </svg>
+          </div>
+          <h3>Restauro</h3>
+          <p>Devolvemos vida às peças com o rigor e o respeito que a sua história merece. Cada intervenção é feita à mão, com materiais tradicionais.</p>
+          <a href="#contacto" class="servico-link">Saber mais →</a>
+        </div>
+        <div class="servico-card reveal">
+          <div class="servico-icon">
+            <!-- Compra: lupa de avaliação / lupa de joalheiro -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="20" cy="20" r="13"/>
+              <line x1="30" y1="30" x2="43" y2="43"/>
+              <line x1="14" y1="20" x2="26" y2="20"/>
+              <line x1="20" y1="14" x2="20" y2="26"/>
+            </svg>
+          </div>
+          <h3>Compra</h3>
+          <p>Avaliamos e adquirimos peças de mobiliário, arte, porcelana e decoração. Oferecemos avaliações gratuitas e sem compromisso.</p>
+          <a href="#contacto" class="servico-link">Saber mais →</a>
+        </div>
+        <div class="servico-card reveal">
+          <div class="servico-icon">
+            <!-- Venda: etiqueta de leilão / certificado -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 28 L20 6 h22 v22 L28 42 Z"/>
+              <circle cx="34" cy="14" r="3"/>
+              <line x1="14" y1="28" x2="26" y2="28"/>
+              <line x1="14" y1="34" x2="22" y2="34"/>
+            </svg>
+          </div>
+          <h3>Venda</h3>
+          <p>A nossa galeria reúne peças seleccionadas com critério. Cada objecto é autenticado, documentado e apresentado na sua melhor forma.</p>
+          <a href="#pecas" class="servico-link">Ver Colecção →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEÇAS EM DESTAQUE -->
+  <section class="section pecas" id="pecas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Galeria</span>
+        <h2>Peças em Destaque</h2>
+        <p>Uma selecção das nossas peças mais notáveis, disponíveis para aquisição.</p>
+      </div>
+      <div class="pecas-grid">
+        <div class="peca-card reveal">
+          <div class="peca-img">
+            <img src="images/comoda-estilo-lus-xvi_.jpeg" alt="Cómoda Estilo Luís XVI" loading="lazy" />
+            <span class="peca-badge">Disponível</span>
+          </div>
+          <div class="peca-info">
+            <span class="peca-categoria">Mobiliário · Séc. XIX</span>
+            <h4>Cómoda Estilo Luís XVI</h4>
+            <p>Nogueira maciça com incrustações de buxo. Restaurada ao original.</p>
+            <span class="peca-preco">Consultar preço</span>
+          </div>
+        </div>
+        <div class="peca-card reveal">
+          <div class="peca-img">
+            <img src="images/paisagem_douro.jpeg" alt="Paisagem do Douro — Anónimo" loading="lazy" />
+            <span class="peca-badge">Disponível</span>
+          </div>
+          <div class="peca-info">
+            <span class="peca-categoria">Arte · Óleo sobre Tela</span>
+            <h4>Paisagem do Douro — Anónimo</h4>
+            <p>Técnica a óleo sobre tela, datada de 1912. Moldura original em talha dourada.</p>
+            <span class="peca-preco">Consultar preço</span>
+          </div>
+        </div>
+        <div class="peca-card reveal">
+          <div class="peca-img">
+            <img src="images/vista_alegre.jpeg" alt="Serviço de Jantar Vista Alegre" loading="lazy" />
+            <span class="peca-badge peca-badge--vendida">Vendida</span>
+          </div>
+          <div class="peca-info">
+            <span class="peca-categoria">Porcelana · Vista Alegre</span>
+            <h4>Serviço de Jantar Completo</h4>
+            <p>48 peças em porcelana Vista Alegre, padrão floral azul cobalto. Séc. XX.</p>
+            <span class="peca-preco">Vendida</span>
+          </div>
+        </div>
+        <div class="peca-card reveal">
+          <div class="peca-img">
+            <img src="images/candeeiro_artdeco.jpeg" alt="Candeeiro de Pé Art Déco" loading="lazy" />
+            <span class="peca-badge">Disponível</span>
+          </div>
+          <div class="peca-info">
+            <span class="peca-categoria">Iluminação · Art Déco</span>
+            <h4>Candeeiro de Pé Art Déco</h4>
+            <p>Bronze e alabastro. Altura 165 cm. Elegância geométrica em estado imaculado.</p>
+            <span class="peca-preco">Consultar preço</span>
+          </div>
+        </div>
+        <div class="peca-card reveal">
+          <div class="peca-img">
+            <img src="images/relogio_pendulo_ingles.png" alt="Relógio de Pêndulo Inglês" loading="lazy" />
+            <span class="peca-badge">Disponível</span>
+          </div>
+          <div class="peca-info">
+            <span class="peca-categoria">Relógio · Séc. XVIII</span>
+            <h4>Relógio de Pêndulo Inglês</h4>
+            <p>Caixa em carvalho com marquetaria floral. Mecanismo original funcionante.</p>
+            <span class="peca-preco">Consultar preço</span>
+          </div>
+        </div>
+        <div class="peca-card reveal">
+          <div class="peca-img">
+            <img src="images/tapete_arraiolos.png" alt="Tapete de Arraiolos Antigo" loading="lazy" />
+            <span class="peca-badge">Disponível</span>
+          </div>
+          <div class="peca-info">
+            <span class="peca-categoria">Tapeçaria · Arraiolos</span>
+            <h4>Tapete de Arraiolos Antigo</h4>
+            <p>Bordado à mão em lã sobre linho. Motivos florais. 280 × 190 cm. Séc. XIX.</p>
+            <span class="peca-preco">Consultar preço</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLL SCENE -->
+  <section class="scroll-scene" id="scrollScene">
+    <div class="scroll-scene-sticky">
+      <canvas id="statueCanvas"></canvas>
+      <div class="scroll-caption" id="scCaption1">
+        <span class="sc-line">Cada peça carrega</span>
+        <span class="sc-line">a memória de um tempo.</span>
+      </div>
+      <div class="scroll-caption" id="scCaption2">
+        <span class="sc-line">Preservamos o que</span>
+        <span class="sc-line">o tempo não esqueceu.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="container sobre-container">
+      <div class="sobre-img reveal">
+        <img src="images/fotografia_loja.jpeg" alt="Casa Antiga — Loja" />
+        <div class="sobre-img-accent"></div>
+      </div>
+      <div class="sobre-content reveal">
+        <span class="label">A Nossa História</span>
+        <h2>Sobre a Casa Antiga</h2>
+        <p class="sobre-lead">Fundada em 1987 em Lisboa, a Casa Antiga nasceu da paixão pela beleza do que perdura.</p>
+        <p>Ao longo de quase quatro décadas, construímos um espaço onde coleccionadores, decoradores e apreciadores encontram peças únicas com história verificada. Cada objecto que entra na nossa galeria é avaliado, documentado e apresentado com o cuidado que merece.</p>
+        <p>Trabalhamos com restauradores certificados e mantemos relações de confiança com os principais leilões e colecções privadas em Portugal e na Europa.</p>
+        <div class="sobre-numeros">
+          <div class="numero">
+            <span class="numero-val">+38</span>
+            <span class="numero-label">Anos de experiência</span>
+          </div>
+          <div class="numero">
+            <span class="numero-val">+2.400</span>
+            <span class="numero-label">Peças transaccionadas</span>
+          </div>
+          <div class="numero">
+            <span class="numero-val">100%</span>
+            <span class="numero-label">Autenticidade garantida</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="cta-banner-bg"></div>
+    <div class="cta-banner-content container">
+      <span class="label">Tem algo especial?</span>
+      <h2>Tem uma peça para avaliar<br />ou vender?</h2>
+      <p>Contacte-nos para uma avaliação gratuita, discreta e sem compromisso.</p>
+      <a href="#contacto" class="btn btn-primary">Fale Connosco</a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contacto" id="contacto">
+    <div class="container contacto-container">
+      <div class="contacto-info reveal">
+        <span class="label">Estamos Aqui</span>
+        <h2>Contacto</h2>
+        <p>Visite-nos na loja, ligue-nos ou envie uma mensagem. Respondemos em menos de 24 horas.</p>
+        <ul class="contacto-lista">
+          <li>
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </span>
+            <div>
+              <strong>Morada</strong>
+              <span>Rua do Exemplo, 47 — 1200-000 Lisboa</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.5 1.17 2 2 0 012.5.01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7 2 2 0 011.72 2z"/></svg>
+            </span>
+            <div>
+              <strong>Telefone</strong>
+              <span>+351 21 000 00 00</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div>
+              <strong>E-mail</strong>
+              <span>geral@casaantiga.pt</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </span>
+            <div>
+              <strong>Horário</strong>
+              <span>Seg–Sex: 10h–19h · Sáb: 10h–14h</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <form class="contacto-form reveal" id="contactoForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome" placeholder="O seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="o.seu@email.pt" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="+351 9xx xxx xxx" />
+        </div>
+        <div class="form-group">
+          <label for="assunto">Assunto *</label>
+          <select id="assunto" name="assunto" required>
+            <option value="" disabled selected>Seleccione um assunto</option>
+            <option value="avaliacao">Avaliação de peça</option>
+            <option value="compra">Compra de peça</option>
+            <option value="restauro">Serviço de restauro</option>
+            <option value="info">Informações gerais</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem *</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva a sua peça ou coloque a sua questão..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+        <p class="form-note">* Campos obrigatórios. Os seus dados são tratados com total confidencialidade.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Casa Antiga</span>
+        <p>Onde o tempo tem valor.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#pecas">Colecção</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer-copy">© 2026 Casa Antiga · Lisboa · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Voltar ao início">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"/>
+      <polyline points="5 12 12 5 19 12"/>
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
